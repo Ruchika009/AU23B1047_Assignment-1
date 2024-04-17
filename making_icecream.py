@@ -1,9 +1,18 @@
-
 from ice_cream import *
+s=input("Enter Size:")
+num=int(input("Enter number of toppings:"))
+toppings=[]
+for i in range(num):
+    p=input("Enter toppings:")
+    toppings.append(p)
+#print(toppings)
+result=add_topping(s,toppings)
 
-toppings=add_topping("Small","springles","hot fudge","whipped cream")
 print("Toppings on icecream are: ")
-print(*toppings, sep='\n')
+for i in toppings:
+    print(i)
 
-shake=make_shake("nuts")
+
+n=input("Enter shake flavour: ")
+shake=make_shake(n)
 print("Shake flavour choosen is ",shake)

@@ -10,7 +10,7 @@ def Future_gain_from_improvement():
     n=(AS*(ICR/CCR)-AS)*((1+i)**EPL-1)/i-IMC*(1+i)**EPL
     return n
 
-print(Future_gain_from_improvement())
+
 
 def Total_gain_from_improvement():
     l=Future_gain_from_improvement()/(i+1)**EPL
