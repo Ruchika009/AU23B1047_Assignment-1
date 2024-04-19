@@ -1,4 +1,3 @@
-#fooditems problem
 def get_order(order):
     
     for i in order:
@@ -6,10 +5,9 @@ def get_order(order):
     
     print()
     print("The following order has been dispatched.")
-    for k in order:
-        print("order-",k)
-    for j in order:
-        order.remove(order[0])  
+    while order:
+        print("Order -", order[0])
+        order.pop(0)
 
     return " "
 M=int(input("No. of orders:"))

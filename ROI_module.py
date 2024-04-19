@@ -4,7 +4,7 @@ CCR=int(input("Current Conversion Rate: "))
 ICR=int(input("Improved Conversion Rate: "))
 IMC=int(input("Improvemenet Cost: "))
 EPL=int(input("Expected Project Life: "))
-i=0.05
+i=float(input("Interest rate:"))
 
 def Future_gain_from_improvement():
     n=(AS*(ICR/CCR)-AS)*((1+i)**EPL-1)/i-IMC*(1+i)**EPL
